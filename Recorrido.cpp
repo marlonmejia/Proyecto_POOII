@@ -1,10 +1,20 @@
 //
 // Created by Ivan on 31/05/2019.
 //
-#include "Casilla.cpp"
+#include <vector>
+#include "Ficha.cpp"
 class Recorrido{
+private:
+    vector<Ficha> recorrido;
 public:
-    Casilla calcularMovimiento(){
+    Recorrido(vector<Ficha> recorrido){
+        this->recorrido=recorrido;
 
     }
+    vector<Ficha> setTamano(int zise){
+        recorrido.reserve(zise);
+        return recorrido;
+    }
+
+    ~Recorrido();
 };

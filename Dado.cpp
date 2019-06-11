@@ -5,6 +5,6 @@
 class Dado{
 public:
     int Lanzar(){
-        return rand()%7;
+        return 1+rand()%6;
     }
 };
