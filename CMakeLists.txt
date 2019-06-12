@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(POO2 main.cpp Tablero.cpp Casilla.cpp Ficha.cpp Juego.cpp Jugadores.cpp Dado.cpp Recorrido.cpp)
+add_executable(POO2 main.cpp Tablero.cpp Ficha.cpp Juego.cpp Jugadores.cpp Dado.cpp Recorrido.cpp Menu.cpp)
 target_link_libraries (POO2 sfml-graphics sfml-window sfml-system)
