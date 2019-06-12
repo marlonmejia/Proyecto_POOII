@@ -41,34 +41,9 @@ int main()
                                     menu.Movedown();
                                     break;
                                 case Keyboard::Enter:
-                                    Juego ludo(4);
-                                    if(menu.GetPressedItem()==0){
-                                        Jugadores player1("player1",0);
-                                        Jugadores CPU1("CPU1",1);
-                                        Jugadores CPU2("CPU2",2);
-                                        Jugadores CPU3("CPU3",3);
-                                        ludo.iniciarJuego();
-                                    }
-                                    if(menu.GetPressedItem()==1){
-                                        Jugadores player1("player1",0);
-                                        Jugadores player2("player2",1);
-                                        Jugadores CPU1("CPU1",2);
-                                        Jugadores CPU3("CPU3",3);
-                                    }
-                                    if(menu.GetPressedItem()==2){
-                                        Jugadores player1("player1",0);
-                                        Jugadores player2("player2",1);
-                                        Jugadores player3("player3",2);
-                                        Jugadores CPU1("CPU3",3);
-                                    }
-                                    if(menu.GetPressedItem()==3){
-                                        Jugadores player1("player1",0);
-                                        Jugadores player2("player2",1);
-                                        Jugadores player3("player3",2);
-                                        Jugadores player4("player4",3);
-                                    }
+                                    Juego ludo(4,menu.GetPressedItem());
+                                    ludo.iniciarJuego();
                                     break;
-
                             }
                             break;
                     }
