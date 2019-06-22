@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.13)
-project(POO2)
+project(Ludo-Project)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SFML_INCLUDE_DIR "D:/SFML-2.5.1/include")
-set(SFML_LIBRARY_DIR "D:/SFML-2.5.1/lib")
-set(SFML_DIR "D:/SFML-2.5.1/lib/cmake/SFML")
+set(SFML_INCLUDE_DIR "SFML-2.5.1/include")
+set(SFML_LIBRARY_DIR "SFML-2.5.1/lib")
+set(SFML_DIR "SFML-2.5.1/lib/cmake/SFML")
 
 link_directories(SFML_LIBRARY_DIR)
 include_directories(SFML_INCLUDE_DIR)
@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(POO2 main.cpp Tablero.cpp Ficha.cpp Juego.cpp Jugadores.cpp Dado.cpp Recorrido.cpp Menu.cpp)
-target_link_libraries (POO2 sfml-graphics sfml-window sfml-system)
+add_executable(Ludo-Project main.cpp Game.cpp Game.h Player.cpp Player.h Fichas.cpp Fichas.h Tablero.cpp Tablero.h Casillas.cpp Casillas.h Dado.cpp Dado.h)
+target_link_libraries (Ludo-Project sfml-graphics sfml-window sfml-system)
