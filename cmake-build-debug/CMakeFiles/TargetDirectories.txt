@@ -1,3 +1,3 @@
-C:/Users/Ivan/POO2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Ivan/POO2/cmake-build-debug/CMakeFiles/POO2.dir
-C:/Users/Ivan/POO2/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/2019-I/Ludo-Project/cmake-build-debug/CMakeFiles/Ludo-Project.dir
+E:/2019-I/Ludo-Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/2019-I/Ludo-Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
