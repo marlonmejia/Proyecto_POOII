@@ -1,0 +1,1 @@
+ -L"C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/SFML_LIBRARY_DIR" E:/SFML-2.5.1/lib/libsfml-graphics-d.a E:/SFML-2.5.1/lib/libsfml-window-d.a E:/SFML-2.5.1/lib/libsfml-system-d.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

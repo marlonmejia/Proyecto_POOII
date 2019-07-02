@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\2019-I\Ludo-Project
+CMAKE_SOURCE_DIR = "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\2019-I\Ludo-Project\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\2019-I\Ludo-Project\cmake-build-debug\CMakeFiles E:\2019-I\Ludo-Project\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\2019-I\Ludo-Project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -110,206 +110,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Ludo-Project
+# Target rules for targets named SFMLApp
 
 # Build rule for target.
-Ludo-Project: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Ludo-Project
-.PHONY : Ludo-Project
+SFMLApp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 SFMLApp
+.PHONY : SFMLApp
 
 # fast build rule for target.
-Ludo-Project/fast:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/build
-.PHONY : Ludo-Project/fast
+SFMLApp/fast:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/build
+.PHONY : SFMLApp/fast
 
-Casillas.obj: Casillas.cpp.obj
+Casilla.obj: Casilla.cpp.obj
 
-.PHONY : Casillas.obj
-
-# target to build an object file
-Casillas.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Casillas.cpp.obj
-.PHONY : Casillas.cpp.obj
-
-Casillas.i: Casillas.cpp.i
-
-.PHONY : Casillas.i
-
-# target to preprocess a source file
-Casillas.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Casillas.cpp.i
-.PHONY : Casillas.cpp.i
-
-Casillas.s: Casillas.cpp.s
-
-.PHONY : Casillas.s
-
-# target to generate assembly for a file
-Casillas.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Casillas.cpp.s
-.PHONY : Casillas.cpp.s
-
-Dado.obj: Dado.cpp.obj
-
-.PHONY : Dado.obj
+.PHONY : Casilla.obj
 
 # target to build an object file
-Dado.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Dado.cpp.obj
-.PHONY : Dado.cpp.obj
+Casilla.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.obj
+.PHONY : Casilla.cpp.obj
 
-Dado.i: Dado.cpp.i
+Casilla.i: Casilla.cpp.i
 
-.PHONY : Dado.i
+.PHONY : Casilla.i
 
 # target to preprocess a source file
-Dado.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Dado.cpp.i
-.PHONY : Dado.cpp.i
+Casilla.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.i
+.PHONY : Casilla.cpp.i
 
-Dado.s: Dado.cpp.s
+Casilla.s: Casilla.cpp.s
 
-.PHONY : Dado.s
+.PHONY : Casilla.s
 
 # target to generate assembly for a file
-Dado.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Dado.cpp.s
-.PHONY : Dado.cpp.s
+Casilla.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.s
+.PHONY : Casilla.cpp.s
 
-Fichas.obj: Fichas.cpp.obj
+Recorrido.obj: Recorrido.cpp.obj
 
-.PHONY : Fichas.obj
+.PHONY : Recorrido.obj
 
 # target to build an object file
-Fichas.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Fichas.cpp.obj
-.PHONY : Fichas.cpp.obj
+Recorrido.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj
+.PHONY : Recorrido.cpp.obj
 
-Fichas.i: Fichas.cpp.i
+Recorrido.i: Recorrido.cpp.i
 
-.PHONY : Fichas.i
-
-# target to preprocess a source file
-Fichas.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Fichas.cpp.i
-.PHONY : Fichas.cpp.i
-
-Fichas.s: Fichas.cpp.s
-
-.PHONY : Fichas.s
-
-# target to generate assembly for a file
-Fichas.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Fichas.cpp.s
-.PHONY : Fichas.cpp.s
-
-Game.obj: Game.cpp.obj
-
-.PHONY : Game.obj
-
-# target to build an object file
-Game.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Game.cpp.obj
-.PHONY : Game.cpp.obj
-
-Game.i: Game.cpp.i
-
-.PHONY : Game.i
+.PHONY : Recorrido.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+Recorrido.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Recorrido.cpp.i
+.PHONY : Recorrido.cpp.i
 
-Game.s: Game.cpp.s
+Recorrido.s: Recorrido.cpp.s
 
-.PHONY : Game.s
-
-# target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Game.cpp.s
-.PHONY : Game.cpp.s
-
-Player.obj: Player.cpp.obj
-
-.PHONY : Player.obj
-
-# target to build an object file
-Player.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Player.cpp.obj
-.PHONY : Player.cpp.obj
-
-Player.i: Player.cpp.i
-
-.PHONY : Player.i
-
-# target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Player.cpp.i
-.PHONY : Player.cpp.i
-
-Player.s: Player.cpp.s
-
-.PHONY : Player.s
+.PHONY : Recorrido.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Player.cpp.s
-.PHONY : Player.cpp.s
-
-Tablero.obj: Tablero.cpp.obj
-
-.PHONY : Tablero.obj
-
-# target to build an object file
-Tablero.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Tablero.cpp.obj
-.PHONY : Tablero.cpp.obj
-
-Tablero.i: Tablero.cpp.i
-
-.PHONY : Tablero.i
-
-# target to preprocess a source file
-Tablero.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Tablero.cpp.i
-.PHONY : Tablero.cpp.i
-
-Tablero.s: Tablero.cpp.s
-
-.PHONY : Tablero.s
-
-# target to generate assembly for a file
-Tablero.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/Tablero.cpp.s
-.PHONY : Tablero.cpp.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\Ludo-Project.dir\build.make CMakeFiles/Ludo-Project.dir/main.cpp.s
-.PHONY : main.cpp.s
+Recorrido.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Recorrido.cpp.s
+.PHONY : Recorrido.cpp.s
 
 # Help Target
 help:
@@ -317,30 +182,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Ludo-Project
+	@echo ... SFMLApp
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Casillas.obj
-	@echo ... Casillas.i
-	@echo ... Casillas.s
-	@echo ... Dado.obj
-	@echo ... Dado.i
-	@echo ... Dado.s
-	@echo ... Fichas.obj
-	@echo ... Fichas.i
-	@echo ... Fichas.s
-	@echo ... Game.obj
-	@echo ... Game.i
-	@echo ... Game.s
-	@echo ... Player.obj
-	@echo ... Player.i
-	@echo ... Player.s
-	@echo ... Tablero.obj
-	@echo ... Tablero.i
-	@echo ... Tablero.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Casilla.obj
+	@echo ... Casilla.i
+	@echo ... Casilla.s
+	@echo ... Recorrido.obj
+	@echo ... Recorrido.i
+	@echo ... Recorrido.s
 .PHONY : help
 
 
