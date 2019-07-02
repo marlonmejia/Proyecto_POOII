@@ -24,6 +24,7 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="Proyecto" targetName="SFMLApp" />
     </generated>
   </component>
   <component name="CMakeSettings">
