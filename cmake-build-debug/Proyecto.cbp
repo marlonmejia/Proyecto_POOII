@@ -98,6 +98,30 @@
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.h">
 			<Option target="SFMLApp"/>
 		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Tablero.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Tablero.h">
+			<Option target="SFMLApp"/>
+		</Unit>
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/main.cpp">
 			<Option target="SFMLApp"/>
 		</Unit>

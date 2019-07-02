@@ -176,6 +176,114 @@ Dado.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Dado.cpp.s
 .PHONY : Dado.cpp.s
 
+Fichas.obj: Fichas.cpp.obj
+
+.PHONY : Fichas.obj
+
+# target to build an object file
+Fichas.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Fichas.cpp.obj
+.PHONY : Fichas.cpp.obj
+
+Fichas.i: Fichas.cpp.i
+
+.PHONY : Fichas.i
+
+# target to preprocess a source file
+Fichas.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Fichas.cpp.i
+.PHONY : Fichas.cpp.i
+
+Fichas.s: Fichas.cpp.s
+
+.PHONY : Fichas.s
+
+# target to generate assembly for a file
+Fichas.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Fichas.cpp.s
+.PHONY : Fichas.cpp.s
+
+Game.obj: Game.cpp.obj
+
+.PHONY : Game.obj
+
+# target to build an object file
+Game.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Game.cpp.obj
+.PHONY : Game.cpp.obj
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Player.obj: Player.cpp.obj
+
+.PHONY : Player.obj
+
+# target to build an object file
+Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Player.cpp.obj
+.PHONY : Player.cpp.obj
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
+Tablero.obj: Tablero.cpp.obj
+
+.PHONY : Tablero.obj
+
+# target to build an object file
+Tablero.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Tablero.cpp.obj
+.PHONY : Tablero.cpp.obj
+
+Tablero.i: Tablero.cpp.i
+
+.PHONY : Tablero.i
+
+# target to preprocess a source file
+Tablero.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Tablero.cpp.i
+.PHONY : Tablero.cpp.i
+
+Tablero.s: Tablero.cpp.s
+
+.PHONY : Tablero.s
+
+# target to generate assembly for a file
+Tablero.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Tablero.cpp.s
+.PHONY : Tablero.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -218,6 +326,18 @@ help:
 	@echo ... Dado.obj
 	@echo ... Dado.i
 	@echo ... Dado.s
+	@echo ... Fichas.obj
+	@echo ... Fichas.i
+	@echo ... Fichas.s
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
+	@echo ... Player.obj
+	@echo ... Player.i
+	@echo ... Player.s
+	@echo ... Tablero.obj
+	@echo ... Tablero.i
+	@echo ... Tablero.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
