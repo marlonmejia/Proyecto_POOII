@@ -149,32 +149,59 @@ Casilla.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.s
 .PHONY : Casilla.cpp.s
 
-Recorrido.obj: Recorrido.cpp.obj
+Dado.obj: Dado.cpp.obj
 
-.PHONY : Recorrido.obj
+.PHONY : Dado.obj
 
 # target to build an object file
-Recorrido.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj
-.PHONY : Recorrido.cpp.obj
+Dado.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Dado.cpp.obj
+.PHONY : Dado.cpp.obj
 
-Recorrido.i: Recorrido.cpp.i
+Dado.i: Dado.cpp.i
 
-.PHONY : Recorrido.i
+.PHONY : Dado.i
 
 # target to preprocess a source file
-Recorrido.cpp.i:
-	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Recorrido.cpp.i
-.PHONY : Recorrido.cpp.i
+Dado.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Dado.cpp.i
+.PHONY : Dado.cpp.i
 
-Recorrido.s: Recorrido.cpp.s
+Dado.s: Dado.cpp.s
 
-.PHONY : Recorrido.s
+.PHONY : Dado.s
 
 # target to generate assembly for a file
-Recorrido.cpp.s:
-	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Recorrido.cpp.s
-.PHONY : Recorrido.cpp.s
+Dado.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Dado.cpp.s
+.PHONY : Dado.cpp.s
+
+main.obj: main.cpp.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -188,9 +215,12 @@ help:
 	@echo ... Casilla.obj
 	@echo ... Casilla.i
 	@echo ... Casilla.s
-	@echo ... Recorrido.obj
-	@echo ... Recorrido.i
-	@echo ... Recorrido.s
+	@echo ... Dado.obj
+	@echo ... Dado.i
+	@echo ... Dado.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

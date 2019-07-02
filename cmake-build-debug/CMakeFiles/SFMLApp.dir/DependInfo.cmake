@@ -5,7 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Casilla.cpp.obj"
-  "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Recorrido.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj"
+  "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Dado.cpp.obj"
+  "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/main.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

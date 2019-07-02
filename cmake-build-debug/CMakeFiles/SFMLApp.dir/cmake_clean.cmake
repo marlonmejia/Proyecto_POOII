@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj"
+  "CMakeFiles/SFMLApp.dir/main.cpp.obj"
   "CMakeFiles/SFMLApp.dir/Casilla.cpp.obj"
+  "CMakeFiles/SFMLApp.dir/Dado.cpp.obj"
   "SFMLApp.pdb"
   "SFMLApp.exe"
   "SFMLApp.exe.manifest"

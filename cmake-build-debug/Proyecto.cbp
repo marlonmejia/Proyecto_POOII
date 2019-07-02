@@ -92,7 +92,13 @@
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.h">
 			<Option target="SFMLApp"/>
 		</Unit>
-		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Recorrido.cpp">
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/main.cpp">
 			<Option target="SFMLApp"/>
 		</Unit>
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/CMakeLists.txt">

@@ -56,19 +56,19 @@ include CMakeFiles/SFMLApp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SFMLApp.dir/flags.make
 
-CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj: CMakeFiles/SFMLApp.dir/flags.make
-CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj: CMakeFiles/SFMLApp.dir/includes_CXX.rsp
-CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj: ../Recorrido.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLApp.dir\Recorrido.cpp.obj -c "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Recorrido.cpp"
+CMakeFiles/SFMLApp.dir/main.cpp.obj: CMakeFiles/SFMLApp.dir/flags.make
+CMakeFiles/SFMLApp.dir/main.cpp.obj: CMakeFiles/SFMLApp.dir/includes_CXX.rsp
+CMakeFiles/SFMLApp.dir/main.cpp.obj: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SFMLApp.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLApp.dir\main.cpp.obj -c "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\main.cpp"
 
-CMakeFiles/SFMLApp.dir/Recorrido.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLApp.dir/Recorrido.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Recorrido.cpp" > CMakeFiles\SFMLApp.dir\Recorrido.cpp.i
+CMakeFiles/SFMLApp.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLApp.dir/main.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\main.cpp" > CMakeFiles\SFMLApp.dir\main.cpp.i
 
-CMakeFiles/SFMLApp.dir/Recorrido.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLApp.dir/Recorrido.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Recorrido.cpp" -o CMakeFiles\SFMLApp.dir\Recorrido.cpp.s
+CMakeFiles/SFMLApp.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLApp.dir/main.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\main.cpp" -o CMakeFiles\SFMLApp.dir\main.cpp.s
 
 CMakeFiles/SFMLApp.dir/Casilla.cpp.obj: CMakeFiles/SFMLApp.dir/flags.make
 CMakeFiles/SFMLApp.dir/Casilla.cpp.obj: CMakeFiles/SFMLApp.dir/includes_CXX.rsp
@@ -84,16 +84,32 @@ CMakeFiles/SFMLApp.dir/Casilla.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLApp.dir/Casilla.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Casilla.cpp" -o CMakeFiles\SFMLApp.dir\Casilla.cpp.s
 
+CMakeFiles/SFMLApp.dir/Dado.cpp.obj: CMakeFiles/SFMLApp.dir/flags.make
+CMakeFiles/SFMLApp.dir/Dado.cpp.obj: CMakeFiles/SFMLApp.dir/includes_CXX.rsp
+CMakeFiles/SFMLApp.dir/Dado.cpp.obj: ../Dado.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SFMLApp.dir/Dado.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLApp.dir\Dado.cpp.obj -c "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Dado.cpp"
+
+CMakeFiles/SFMLApp.dir/Dado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLApp.dir/Dado.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Dado.cpp" > CMakeFiles\SFMLApp.dir\Dado.cpp.i
+
+CMakeFiles/SFMLApp.dir/Dado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLApp.dir/Dado.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\Dado.cpp" -o CMakeFiles\SFMLApp.dir\Dado.cpp.s
+
 # Object files for target SFMLApp
 SFMLApp_OBJECTS = \
-"CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj" \
-"CMakeFiles/SFMLApp.dir/Casilla.cpp.obj"
+"CMakeFiles/SFMLApp.dir/main.cpp.obj" \
+"CMakeFiles/SFMLApp.dir/Casilla.cpp.obj" \
+"CMakeFiles/SFMLApp.dir/Dado.cpp.obj"
 
 # External object files for target SFMLApp
 SFMLApp_EXTERNAL_OBJECTS =
 
-SFMLApp.exe: CMakeFiles/SFMLApp.dir/Recorrido.cpp.obj
+SFMLApp.exe: CMakeFiles/SFMLApp.dir/main.cpp.obj
 SFMLApp.exe: CMakeFiles/SFMLApp.dir/Casilla.cpp.obj
+SFMLApp.exe: CMakeFiles/SFMLApp.dir/Dado.cpp.obj
 SFMLApp.exe: CMakeFiles/SFMLApp.dir/build.make
 SFMLApp.exe: E:/SFML-2.5.1/lib/libsfml-graphics-d.a
 SFMLApp.exe: E:/SFML-2.5.1/lib/libsfml-window-d.a
@@ -101,7 +117,7 @@ SFMLApp.exe: E:/SFML-2.5.1/lib/libsfml-system-d.a
 SFMLApp.exe: CMakeFiles/SFMLApp.dir/linklibs.rsp
 SFMLApp.exe: CMakeFiles/SFMLApp.dir/objects1.rsp
 SFMLApp.exe: CMakeFiles/SFMLApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SFMLApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\MARLON MEJIA\CLionProjects\Proyecto_POOII\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable SFMLApp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SFMLApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
