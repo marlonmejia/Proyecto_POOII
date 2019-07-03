@@ -1,10 +1,6 @@
-//
-// Created by MARLON MEJIA on 2/07/2019.
-//
 
-#ifndef PROYECTO_DADO_H
-#define PROYECTO_DADO_H
-
+#ifndef LUDO_PROJECT_DADO_H
+#define LUDO_PROJECT_DADO_H
 #include <SFML/Graphics.hpp>
 #include <stdlib.h>
 #include <ctime>
@@ -31,4 +27,4 @@ public:
 };
 
 
-#endif //PROYECTO_DADO_H
+#endif //LUDO_PROJECT_DADO_H
