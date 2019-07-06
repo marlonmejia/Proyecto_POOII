@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.cpp
-Casilla.h
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.cpp
-Dado.h
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.h
-
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.h
 SFML/Graphics.hpp
 -
@@ -24,31 +14,35 @@ stdlib.h
 ctime
 -
 
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.cpp
-Fichas.h
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.cpp
-Game.h
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.h
+SFML/Graphics/CircleShape.hpp
+-
 
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.cpp
 Player.h
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.h
-
-C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Tablero.cpp
 Tablero.h
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Tablero.h
+Dado.h
+C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.h
+
+C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.h
+SFML/Graphics.hpp
+-
+iostream
+-
+Fichas.h
+C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.h
+vector
+-
 
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Tablero.h
 
 C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/main.cpp
+SFML/Graphics.hpp
+-
+Game.h
+C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.h
 
 E:/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h

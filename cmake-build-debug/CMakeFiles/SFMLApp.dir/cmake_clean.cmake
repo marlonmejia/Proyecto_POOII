@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SFMLApp.dir/main.cpp.obj"
-  "CMakeFiles/SFMLApp.dir/Casilla.cpp.obj"
+  "CMakeFiles/SFMLApp.dir/Casillas.cpp.obj"
+  "CMakeFiles/SFMLApp.dir/Menu.cpp.obj"
   "CMakeFiles/SFMLApp.dir/Dado.cpp.obj"
   "CMakeFiles/SFMLApp.dir/Fichas.cpp.obj"
   "CMakeFiles/SFMLApp.dir/Game.cpp.obj"

@@ -4,10 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Casilla.cpp.obj"
+  "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casillas.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Casillas.cpp.obj"
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Dado.cpp.obj"
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Fichas.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Fichas.cpp.obj"
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Game.cpp.obj"
+  "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Menu.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Menu.cpp.obj"
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Player.cpp.obj"
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Tablero.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/Tablero.cpp.obj"
   "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/main.cpp" "C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/cmake-build-debug/CMakeFiles/SFMLApp.dir/main.cpp.obj"

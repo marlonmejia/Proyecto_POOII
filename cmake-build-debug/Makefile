@@ -122,32 +122,32 @@ SFMLApp/fast:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/build
 .PHONY : SFMLApp/fast
 
-Casilla.obj: Casilla.cpp.obj
+Casillas.obj: Casillas.cpp.obj
 
-.PHONY : Casilla.obj
+.PHONY : Casillas.obj
 
 # target to build an object file
-Casilla.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.obj
-.PHONY : Casilla.cpp.obj
+Casillas.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casillas.cpp.obj
+.PHONY : Casillas.cpp.obj
 
-Casilla.i: Casilla.cpp.i
+Casillas.i: Casillas.cpp.i
 
-.PHONY : Casilla.i
+.PHONY : Casillas.i
 
 # target to preprocess a source file
-Casilla.cpp.i:
-	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.i
-.PHONY : Casilla.cpp.i
+Casillas.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casillas.cpp.i
+.PHONY : Casillas.cpp.i
 
-Casilla.s: Casilla.cpp.s
+Casillas.s: Casillas.cpp.s
 
-.PHONY : Casilla.s
+.PHONY : Casillas.s
 
 # target to generate assembly for a file
-Casilla.cpp.s:
-	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casilla.cpp.s
-.PHONY : Casilla.cpp.s
+Casillas.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Casillas.cpp.s
+.PHONY : Casillas.cpp.s
 
 Dado.obj: Dado.cpp.obj
 
@@ -229,6 +229,33 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Game.cpp.s
 .PHONY : Game.cpp.s
+
+Menu.obj: Menu.cpp.obj
+
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
+
+Menu.i: Menu.cpp.i
+
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
 
 Player.obj: Player.cpp.obj
 
@@ -320,9 +347,9 @@ help:
 	@echo ... SFMLApp
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Casilla.obj
-	@echo ... Casilla.i
-	@echo ... Casilla.s
+	@echo ... Casillas.obj
+	@echo ... Casillas.i
+	@echo ... Casillas.s
 	@echo ... Dado.obj
 	@echo ... Dado.i
 	@echo ... Dado.s
@@ -332,6 +359,9 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s

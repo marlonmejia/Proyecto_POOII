@@ -1,4 +1,9 @@
-//
-// Created by MARLON MEJIA on 2/07/2019.
-//
+#include <SFML/Graphics.hpp>
+#include "Game.h"
+int main() {
 
+    Game game;
+    game.Run(4);
+
+    return 0;
+}

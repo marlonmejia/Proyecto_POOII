@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(SFMLApp main.cpp Casilla.cpp Casilla.h Dado.cpp Dado.h Fichas.cpp Fichas.h Game.cpp Game.h Player.cpp Player.h Tablero.cpp Tablero.h)
+add_executable(SFMLApp main.cpp Casillas.cpp Menu.cpp Menu.h Casillas.h Dado.cpp Dado.h Fichas.cpp Fichas.h Game.cpp Game.h Player.cpp Player.h Tablero.cpp Tablero.h)
 target_link_libraries (SFMLApp sfml-graphics sfml-window sfml-system)

@@ -86,10 +86,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.cpp">
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casillas.cpp">
 			<Option target="SFMLApp"/>
 		</Unit>
-		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casilla.h">
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Casillas.h">
 			<Option target="SFMLApp"/>
 		</Unit>
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Dado.cpp">
@@ -108,6 +108,12 @@
 			<Option target="SFMLApp"/>
 		</Unit>
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Game.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Menu.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Menu.h">
 			<Option target="SFMLApp"/>
 		</Unit>
 		<Unit filename="C:/Users/MARLON MEJIA/CLionProjects/Proyecto_POOII/Player.cpp">
