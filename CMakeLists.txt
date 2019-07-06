@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(POO2)
+project(Ludo_Master)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(POO2 main.cpp Tablero.cpp Ficha.cpp Juego.cpp Jugadores.cpp Dado.cpp Recorrido.cpp Menu.cpp)
-target_link_libraries (POO2 sfml-graphics sfml-window sfml-system)
+add_executable(Ludo_Master main.cpp Casillas.cpp Casillas.h Dado.cpp Dado.h Fichas.cpp Fichas.h Player.cpp Player.h Tablero.cpp Tablero.h Game.cpp Game.h Menu.cpp Menu.h)
+target_link_libraries(Ludo_Master sfml-graphics sfml-window sfml-system)

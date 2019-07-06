@@ -47,24 +47,13 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Ivan\POO2
+CMAKE_SOURCE_DIR = C:\Users\Ivan\Ludo-Master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Ivan\POO2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Ivan\Ludo-Master\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\POO2\cmake-build-debug\CMakeFiles C:\Users\Ivan\POO2\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\Ludo-Master\cmake-build-debug\CMakeFiles C:\Users\Ivan\Ludo-Master\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\POO2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\Ludo-Master\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named POO2
+# Target rules for targets named Ludo_Master
 
 # Build rule for target.
-POO2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 POO2
-.PHONY : POO2
+Ludo_Master: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Ludo_Master
+.PHONY : Ludo_Master
 
 # fast build rule for target.
-POO2/fast:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/build
-.PHONY : POO2/fast
+Ludo_Master/fast:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/build
+.PHONY : Ludo_Master/fast
+
+Casillas.obj: Casillas.cpp.obj
+
+.PHONY : Casillas.obj
+
+# target to build an object file
+Casillas.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Casillas.cpp.obj
+.PHONY : Casillas.cpp.obj
+
+Casillas.i: Casillas.cpp.i
+
+.PHONY : Casillas.i
+
+# target to preprocess a source file
+Casillas.cpp.i:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Casillas.cpp.i
+.PHONY : Casillas.cpp.i
+
+Casillas.s: Casillas.cpp.s
+
+.PHONY : Casillas.s
+
+# target to generate assembly for a file
+Casillas.cpp.s:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Casillas.cpp.s
+.PHONY : Casillas.cpp.s
 
 Dado.obj: Dado.cpp.obj
 
@@ -128,7 +155,7 @@ Dado.obj: Dado.cpp.obj
 
 # target to build an object file
 Dado.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Dado.cpp.obj
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Dado.cpp.obj
 .PHONY : Dado.cpp.obj
 
 Dado.i: Dado.cpp.i
@@ -137,7 +164,7 @@ Dado.i: Dado.cpp.i
 
 # target to preprocess a source file
 Dado.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Dado.cpp.i
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Dado.cpp.i
 .PHONY : Dado.cpp.i
 
 Dado.s: Dado.cpp.s
@@ -146,89 +173,62 @@ Dado.s: Dado.cpp.s
 
 # target to generate assembly for a file
 Dado.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Dado.cpp.s
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Dado.cpp.s
 .PHONY : Dado.cpp.s
 
-Ficha.obj: Ficha.cpp.obj
+Fichas.obj: Fichas.cpp.obj
 
-.PHONY : Ficha.obj
-
-# target to build an object file
-Ficha.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Ficha.cpp.obj
-.PHONY : Ficha.cpp.obj
-
-Ficha.i: Ficha.cpp.i
-
-.PHONY : Ficha.i
-
-# target to preprocess a source file
-Ficha.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Ficha.cpp.i
-.PHONY : Ficha.cpp.i
-
-Ficha.s: Ficha.cpp.s
-
-.PHONY : Ficha.s
-
-# target to generate assembly for a file
-Ficha.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Ficha.cpp.s
-.PHONY : Ficha.cpp.s
-
-Juego.obj: Juego.cpp.obj
-
-.PHONY : Juego.obj
+.PHONY : Fichas.obj
 
 # target to build an object file
-Juego.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Juego.cpp.obj
-.PHONY : Juego.cpp.obj
+Fichas.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Fichas.cpp.obj
+.PHONY : Fichas.cpp.obj
 
-Juego.i: Juego.cpp.i
+Fichas.i: Fichas.cpp.i
 
-.PHONY : Juego.i
+.PHONY : Fichas.i
 
 # target to preprocess a source file
-Juego.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Juego.cpp.i
-.PHONY : Juego.cpp.i
+Fichas.cpp.i:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Fichas.cpp.i
+.PHONY : Fichas.cpp.i
 
-Juego.s: Juego.cpp.s
+Fichas.s: Fichas.cpp.s
 
-.PHONY : Juego.s
+.PHONY : Fichas.s
 
 # target to generate assembly for a file
-Juego.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Juego.cpp.s
-.PHONY : Juego.cpp.s
+Fichas.cpp.s:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Fichas.cpp.s
+.PHONY : Fichas.cpp.s
 
-Jugadores.obj: Jugadores.cpp.obj
+Game.obj: Game.cpp.obj
 
-.PHONY : Jugadores.obj
+.PHONY : Game.obj
 
 # target to build an object file
-Jugadores.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Jugadores.cpp.obj
-.PHONY : Jugadores.cpp.obj
+Game.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Game.cpp.obj
+.PHONY : Game.cpp.obj
 
-Jugadores.i: Jugadores.cpp.i
+Game.i: Game.cpp.i
 
-.PHONY : Jugadores.i
+.PHONY : Game.i
 
 # target to preprocess a source file
-Jugadores.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Jugadores.cpp.i
-.PHONY : Jugadores.cpp.i
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Game.cpp.i
+.PHONY : Game.cpp.i
 
-Jugadores.s: Jugadores.cpp.s
+Game.s: Game.cpp.s
 
-.PHONY : Jugadores.s
+.PHONY : Game.s
 
 # target to generate assembly for a file
-Jugadores.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Jugadores.cpp.s
-.PHONY : Jugadores.cpp.s
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Game.cpp.s
+.PHONY : Game.cpp.s
 
 Menu.obj: Menu.cpp.obj
 
@@ -236,7 +236,7 @@ Menu.obj: Menu.cpp.obj
 
 # target to build an object file
 Menu.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Menu.cpp.obj
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Menu.cpp.obj
 .PHONY : Menu.cpp.obj
 
 Menu.i: Menu.cpp.i
@@ -245,7 +245,7 @@ Menu.i: Menu.cpp.i
 
 # target to preprocess a source file
 Menu.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Menu.cpp.i
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Menu.cpp.i
 .PHONY : Menu.cpp.i
 
 Menu.s: Menu.cpp.s
@@ -254,35 +254,35 @@ Menu.s: Menu.cpp.s
 
 # target to generate assembly for a file
 Menu.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Menu.cpp.s
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
-Recorrido.obj: Recorrido.cpp.obj
+Player.obj: Player.cpp.obj
 
-.PHONY : Recorrido.obj
+.PHONY : Player.obj
 
 # target to build an object file
-Recorrido.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Recorrido.cpp.obj
-.PHONY : Recorrido.cpp.obj
+Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Player.cpp.obj
+.PHONY : Player.cpp.obj
 
-Recorrido.i: Recorrido.cpp.i
+Player.i: Player.cpp.i
 
-.PHONY : Recorrido.i
+.PHONY : Player.i
 
 # target to preprocess a source file
-Recorrido.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Recorrido.cpp.i
-.PHONY : Recorrido.cpp.i
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Player.cpp.i
+.PHONY : Player.cpp.i
 
-Recorrido.s: Recorrido.cpp.s
+Player.s: Player.cpp.s
 
-.PHONY : Recorrido.s
+.PHONY : Player.s
 
 # target to generate assembly for a file
-Recorrido.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Recorrido.cpp.s
-.PHONY : Recorrido.cpp.s
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Player.cpp.s
+.PHONY : Player.cpp.s
 
 Tablero.obj: Tablero.cpp.obj
 
@@ -290,7 +290,7 @@ Tablero.obj: Tablero.cpp.obj
 
 # target to build an object file
 Tablero.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Tablero.cpp.obj
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Tablero.cpp.obj
 .PHONY : Tablero.cpp.obj
 
 Tablero.i: Tablero.cpp.i
@@ -299,7 +299,7 @@ Tablero.i: Tablero.cpp.i
 
 # target to preprocess a source file
 Tablero.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Tablero.cpp.i
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Tablero.cpp.i
 .PHONY : Tablero.cpp.i
 
 Tablero.s: Tablero.cpp.s
@@ -308,7 +308,7 @@ Tablero.s: Tablero.cpp.s
 
 # target to generate assembly for a file
 Tablero.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/Tablero.cpp.s
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/Tablero.cpp.s
 .PHONY : Tablero.cpp.s
 
 main.obj: main.cpp.obj
@@ -317,7 +317,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -326,7 +326,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -335,35 +335,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-pociciones.obj: pociciones.cpp.obj
-
-.PHONY : pociciones.obj
-
-# target to build an object file
-pociciones.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/pociciones.cpp.obj
-.PHONY : pociciones.cpp.obj
-
-pociciones.i: pociciones.cpp.i
-
-.PHONY : pociciones.i
-
-# target to preprocess a source file
-pociciones.cpp.i:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/pociciones.cpp.i
-.PHONY : pociciones.cpp.i
-
-pociciones.s: pociciones.cpp.s
-
-.PHONY : pociciones.s
-
-# target to generate assembly for a file
-pociciones.cpp.s:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/pociciones.cpp.s
-.PHONY : pociciones.cpp.s
 
 # Help Target
 help:
@@ -371,36 +344,33 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... POO2
+	@echo ... Ludo_Master
 	@echo ... edit_cache
+	@echo ... rebuild_cache
+	@echo ... Casillas.obj
+	@echo ... Casillas.i
+	@echo ... Casillas.s
 	@echo ... Dado.obj
 	@echo ... Dado.i
 	@echo ... Dado.s
-	@echo ... Ficha.obj
-	@echo ... Ficha.i
-	@echo ... Ficha.s
-	@echo ... Juego.obj
-	@echo ... Juego.i
-	@echo ... Juego.s
-	@echo ... Jugadores.obj
-	@echo ... Jugadores.i
-	@echo ... Jugadores.s
+	@echo ... Fichas.obj
+	@echo ... Fichas.i
+	@echo ... Fichas.s
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
 	@echo ... Menu.obj
 	@echo ... Menu.i
 	@echo ... Menu.s
-	@echo ... Recorrido.obj
-	@echo ... Recorrido.i
-	@echo ... Recorrido.s
+	@echo ... Player.obj
+	@echo ... Player.i
+	@echo ... Player.s
 	@echo ... Tablero.obj
 	@echo ... Tablero.i
 	@echo ... Tablero.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... pociciones.obj
-	@echo ... pociciones.i
-	@echo ... pociciones.s
 .PHONY : help
 
 

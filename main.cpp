@@ -1,61 +1,50 @@
+
 #include <SFML/Graphics.hpp>
-#include <iostream>
-#include "Menu.cpp"
-#include "Juego.cpp"
-using namespace sf;
-using namespace std;
-int main()
-{
-    RenderWindow window1(VideoMode(600, 384), "Inicio");
-    Texture inicio;
-    Font fuente;
-    if(!fuente.loadFromFile("C:/Users/Ivan/POO2/arial.ttf")){
-        return EXIT_FAILURE;
-    }
-    if(!inicio.loadFromFile("C:/Users/Ivan/POO2/inicio.png")){
-        return EXIT_FAILURE;
-    }
-    Text texto;
-    texto.setString("Press Enter to continue");
-    texto.setFont(fuente);
-    texto.setCharacterSize(15);
-    texto.setPosition(230, 360);
-    texto.setFillColor(Color::Black);
-    texto.setStyle(Text::Underlined);
-    Sprite sprite5;
-    sprite5.setTexture(inicio);
-    while(window1.isOpen()){
-        if(Keyboard::isKeyPressed(Keyboard::Enter)){
-            RenderWindow window2(VideoMode(300,300),"N° Jugadores");
-            Menu menu(window2.getSize().x,window2.getSize().y);
-            while (window2.isOpen()){
-                Event event;
-                while(window2.pollEvent(event)){
-                    switch(event.type){
-                        case Event::KeyReleased:
-                            switch(event.key.code){
-                                case Keyboard::Up:
-                                    menu.Moveup();
+#include "Game.h"
+#include "Menu.h"
+int main() {
+
+    sf::RenderWindow menu(sf::VideoMode(600,600),"Menu De Jugadores");
+    Menu ventanaI(menu.getSize().x,menu.getSize().y);
+    while(menu.isOpen()){
+        sf::Event event;
+        while(menu.pollEvent(event)){
+            switch (event.type){
+                case sf::Event::KeyReleased:
+                    switch (event.key.code){
+                        case sf::Keyboard::Up:
+                            ventanaI.MoveUp();
+                            break;
+                        case sf::Keyboard::Down:
+                            ventanaI.MoveDown();
+                            break;
+                        case sf::Keyboard::Enter:
+                            Game game;
+                            switch (ventanaI.GetIndex()){
+                                case 0:
+                                    game.Run(1);
                                     break;
-                                case Keyboard::Down:
-                                    menu.Movedown();
+                                case 1:
+                                    game.Run(2);
                                     break;
-                                case Keyboard::Enter:
-                                    Juego ludo(4,menu.GetPressedItem());
-                                    ludo.iniciarJuego();
+                                case 2:
+                                    game.Run(3);
+                                    break;
+                                case 3:
+                                    game.Run(4);
                                     break;
                             }
+                            menu.close();
                             break;
-                    }
-                }
-            }
 
-            window1.close();
+                    }
+                    break;
+            }
         }
-        window1.clear();
-        window1.draw(sprite5);
-        window1.draw(texto);
-        window1.display();
+        menu.clear();
+        ventanaI.ventana(menu);
+        menu.display();
     }
     return 0;
 }
+

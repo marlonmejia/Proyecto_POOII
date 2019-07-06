@@ -1,91 +1,86 @@
 //
-// Created by Ivan on 31/05/2019.
+// Created by Ivan on 25/06/2019.
 //
-#include <iostream>
-#include <SFML/Graphics.hpp>
-#include "Recorrido.cpp"
-using namespace sf;
-using namespace std;
-class Tablero{
-private:
 
-public:
-    void mostrar(){
-        // inicializacion de las imagenes
-        sf::Texture tablero;
-        sf::Texture dado;
-        sf::Font fuente;
-        if(!fuente.loadFromFile("C:/Users/Ivan/POO2/arial.ttf")){
-        }
-        if(!tablero.loadFromFile("C:/Users/Ivan/POO2/tablero.png")){
+#include "Tablero.h"
 
-        }
-        if(!dado.loadFromFile("C:/Users/Ivan/POO2/dado.png")){
-        }
-        sf::Text texto1;
-        sf::Text texto2;
+Tablero::Tablero() {
 
+    casillasBlacas = std::vector<Casillas> (52,CasillaBlanca());
+    casillasVerdes = std::vector<Casillas> (10,CasillaVerde());
+    casillasAmarillas = std::vector<Casillas> (10,CasillaAmarillo());
+    casillasAzules = std::vector<Casillas> (10,CasillaAzul());
+    casillasRojas = std::vector<Casillas> (10,CasillaRojo());
 
-        texto1.setString("Lanzar Dado");
-        texto1.setFont(fuente);
-        texto1.setCharacterSize(17);
-        texto1.setPosition(440,275);
+    setAllPositions(casillasVerdes, X_POS_VERDE_INICIAL,Y_POS_VERDE_INICIAL);
+    setAllPositions(casillasAmarillas, X_POS_AMARILLO_INICIAL,Y_POS_AMARILLO_INICIAL);
+    setAllPositions(casillasAzules, X_POS_AZUL_INICIAL,Y_POS_AZUL_INICIAL);
+    setAllPositions(casillasRojas, X_POS_ROJO_INICIAL,Y_POS_ROJO_INICIAL);
 
-        texto2.setString("turno del:");
-        texto2.setFont(fuente);
-        texto2.setCharacterSize(30);
-        texto2.setPosition(433,50);
-
-        sf::Sprite sprite1;
-        sprite1.setTexture(tablero);
-        sf::Sprite sprite2;
-        sprite2.setTexture(dado);
-        sprite2.setPosition(450,300);
-
-        //
-
-
-        sf::RenderWindow window(sf::VideoMode(600, 390), "Ludo Mania");
-
-        sf::RectangleShape casa_amarilla(sf::Vector2f(156,156));
-        casa_amarilla.setFillColor(sf::Color::Yellow);
-        casa_amarilla.setPosition(0,0);
-
-        sf::RectangleShape casa_Azul(sf::Vector2f(156,156));
-        casa_Azul.setFillColor(sf::Color::Blue);
-        casa_Azul.setPosition(234,0);
-
-        sf::RectangleShape casa_Roja(sf::Vector2f(156,156));
-        casa_Roja.setFillColor(sf::Color::Red);
-        casa_Roja.setPosition(0,234);
-
-        sf::RectangleShape casa_verde(sf::Vector2f(156,156));
-        casa_verde.setFillColor(sf::Color::Green);
-        casa_verde.setPosition(234,234);
-
-//linea_1_VERDE_AMARILLO
-
-
-
-        while (window.isOpen()){
-            sf::Event event;
-            while (window.pollEvent(event)){
-                if (event.type == sf::Event::Closed)
-                    window.close();
-            }
-            window.clear();
-            //
-            window.draw(sprite2);
-            window.draw(sprite1);
-            window.draw(texto1);
-            window.draw(texto2);
-
-            //
-
-
-            window.display();
-        }
-
+    for(int i=4;i<=8;i++){
+        casillasVerdes[i].pos.X=93+(i-4)*55;     casillasVerdes[i].pos.Y=430;
     }
 
-};
+    for(int i=4;i<=8;i++){
+        casillasAzules[i].pos.X=770-(i-4)*55;     casillasAzules[i].pos.Y=430;
+    }
+
+    for(int i=4;i<=8;i++){
+        casillasAmarillas[i].pos.X=429;     casillasAmarillas[i].pos.Y=88+(i-4)*57;
+    }
+
+    for(int i=4;i<=8;i++){
+        casillasRojas[i].pos.X=429;     casillasRojas[4].pos.Y=763-(i-4)*57;
+    }
+
+    for(int i=0;i<=4;i++){
+        casillasBlacas[i].pos.X=93+i*57; casillasBlacas[i].pos.Y=373;
+    }
+    for(int i=5;i<=10;i++){
+        casillasBlacas[i].pos.X=378; casillasBlacas[i].pos.Y=316-(i-5)*57;
+    }
+
+    casillasBlacas[11].pos.X=435; casillasBlacas[11].pos.Y=31;
+
+    for(int i=12;i<=17;i++){
+        casillasBlacas[i].pos.X=492; casillasBlacas[i].pos.Y=31+(i-12)*57;
+    }
+
+    for(int i=18;i<=23;i++){
+        casillasBlacas[i].pos.X=550+57*(i-18); casillasBlacas[i].pos.Y=373;
+    }
+
+    casillasBlacas[24].pos.X=835; casillasBlacas[24].pos.Y=430;
+
+    for(int i=25;i<=30;i++){
+        casillasBlacas[i].pos.X=835-(i-25)*57; casillasBlacas[i].pos.Y=487;
+    }
+
+    for(int i=31;i<=36;i++){
+        casillasBlacas[i].pos.X=492; casillasBlacas[i].pos.Y=544+(i-31)*57;
+    }
+
+    casillasBlacas[37].pos.X=435; casillasBlacas[37].pos.Y=825;
+
+    for(int i=38;i<=43;i++){
+        casillasBlacas[i].pos.X=378; casillasBlacas[i].pos.Y=825-(i-38)*57;
+    }
+
+    for(int i=44;i<=49;i++){
+        casillasBlacas[i].pos.X=321-(i-44)*57; casillasBlacas[i].pos.Y=487;
+    }
+
+    for(int i=50;i<=51;i++){
+        casillasBlacas[i].pos.X=36; casillasBlacas[i].pos.Y=430-(i-50)*57;
+    }
+
+
+}
+template <typename T>
+void Tablero::setAllPositions(T &vectorColor,int posX, int posY) {
+    vectorColor[0].pos.X = posX;vectorColor[0].pos.Y = posY;
+    vectorColor[1].pos.X = posX+60;vectorColor[1].pos.Y = posY+56;
+    vectorColor[2].pos.X = posX;vectorColor[2].pos.Y = posY+113;
+    vectorColor[3].pos.X = posX-60;vectorColor[3].pos.Y = posY+56;
+
+}

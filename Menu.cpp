@@ -1,65 +1,55 @@
 //
-// Created by Ivan on 8/06/2019.
+// Created by Ivan on 25/06/2019.
 //
-#include <SFML/Graphics.hpp>
-#include <iostream>
-#define MAX_NUMBER_OF_ITEM 4
-using namespace std;
-using namespace sf;
-class Menu{
-private:
-    int selectedItemIndex;
-    Font fuente;
-    Text texto[MAX_NUMBER_OF_ITEM];
-public:
-    Menu(float W,float H){
-        if(!fuente.loadFromFile("C:/Users/Ivan/POO2/arial.ttf")){
-           //Error al cargar fuente
-        }
-        texto[0].setFont(fuente);
-        texto[0].setFillColor(Color::Red);
-        texto[0].setString("1 player");
-        texto[0].setPosition(Vector2f(W/2,H/(MAX_NUMBER_OF_ITEM+1)*1));
 
-        texto[1].setFont(fuente);
-        texto[1].setFillColor(Color::White);
-        texto[1].setString("2 player");
-        texto[1].setPosition(Vector2f(W/2,H/(MAX_NUMBER_OF_ITEM+1)*2));
+#include "Menu.h"
 
-        texto[2].setFont(fuente);
-        texto[2].setFillColor(Color::White);
-        texto[2].setString("3 player");
-        texto[2].setPosition(Vector2f(W/2,H/(MAX_NUMBER_OF_ITEM+1)*3));
-
-        texto[3].setFont(fuente);
-        texto[3].setFillColor(Color::White);
-        texto[3].setString("4 player");
-        texto[3].setPosition(Vector2f(W/2,H/(MAX_NUMBER_OF_ITEM+1)*4));
+Menu::Menu(float width, float height)
+{
+    if(!fuente.loadFromFile("Images/FontFile.ttf")){
+        //Error
     }
-    void draw(RenderWindow &window){
-        for(int i=0;i<MAX_NUMBER_OF_ITEM;i++) {
-            window.draw(texto[i]);
-        }
-    }
-    void Moveup(){
-        if(selectedItemIndex-1>=0){
-            texto[selectedItemIndex].setFillColor(Color::White);
-            selectedItemIndex--;
-            texto[selectedItemIndex].setFillColor(Color::Red);
-        }
+    menu[0].setFont(fuente);
+    menu[0].setFillColor(sf::Color::Red);
+    menu[0].setString("1 Player");
+    menu[0].setPosition(sf::Vector2f(width/2,height/(MAX_NUMBER_OF_ITEM+1)*1));
 
+    menu[1].setFont(fuente);
+    menu[1].setFillColor(sf::Color::White);
+    menu[1].setString("2 Players");
+    menu[1].setPosition(sf::Vector2f(width/2,height/(MAX_NUMBER_OF_ITEM+1)*2));
 
-    }
-    void Movedown(){
-        if(selectedItemIndex+1<MAX_NUMBER_OF_ITEM){
-            texto[selectedItemIndex].setFillColor(Color::White);
-            selectedItemIndex++;
-            texto[selectedItemIndex].setFillColor(Color::Red);
-        }
-    }
-    int GetPressedItem(){
-        return selectedItemIndex;
-    }
-    ~Menu();
+    menu[2].setFont(fuente);
+    menu[2].setFillColor(sf::Color::White);
+    menu[2].setString("3 Players");
+    menu[2].setPosition(sf::Vector2f(width/2,height/(MAX_NUMBER_OF_ITEM+1)*3));
 
-};
+    menu[3].setFont(fuente);
+    menu[3].setFillColor(sf::Color::White);
+    menu[3].setString("4 Players");
+    menu[3].setPosition(sf::Vector2f(width/2,height/(MAX_NUMBER_OF_ITEM+1)*4));
+
+}
+
+Menu::~Menu(){
+
+}
+void Menu::ventana(sf::RenderWindow &window) {
+    for(int i=0;i<MAX_NUMBER_OF_ITEM;i++){
+        window.draw(menu[i]);
+    }
+}
+void Menu::MoveUp() {
+    if(selectedItemIdex-1>=0){
+        menu[selectedItemIdex].setFillColor(sf::Color::White);
+        selectedItemIdex--;
+        menu[selectedItemIdex].setFillColor(sf::Color::Red);
+    }
+}
+void  Menu::MoveDown() {
+    if(selectedItemIdex+1<MAX_NUMBER_OF_ITEM){
+        menu[selectedItemIdex].setFillColor(sf::Color::White);
+        selectedItemIdex++;
+        menu[selectedItemIdex].setFillColor(sf::Color::Red);
+    }
+}

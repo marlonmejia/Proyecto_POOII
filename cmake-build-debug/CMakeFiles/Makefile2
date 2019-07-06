@@ -58,45 +58,45 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Ivan\POO2
+CMAKE_SOURCE_DIR = C:\Users\Ivan\Ludo-Master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Ivan\POO2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Ivan\Ludo-Master\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/POO2.dir
+# Target rules for target CMakeFiles/Ludo_Master.dir
 
 # All Build rule for target.
-CMakeFiles/POO2.dir/all:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/depend
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Ivan\POO2\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target POO2"
-.PHONY : CMakeFiles/POO2.dir/all
+CMakeFiles/Ludo_Master.dir/all:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/depend
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Ivan\Ludo-Master\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target Ludo_Master"
+.PHONY : CMakeFiles/Ludo_Master.dir/all
 
 # Include target in all.
-all: CMakeFiles/POO2.dir/all
+all: CMakeFiles/Ludo_Master.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/POO2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\POO2\cmake-build-debug\CMakeFiles 10
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/POO2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\POO2\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/POO2.dir/rule
+CMakeFiles/Ludo_Master.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\Ludo-Master\cmake-build-debug\CMakeFiles 9
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Ludo_Master.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ivan\Ludo-Master\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Ludo_Master.dir/rule
 
 # Convenience name for target.
-POO2: CMakeFiles/POO2.dir/rule
+Ludo_Master: CMakeFiles/Ludo_Master.dir/rule
 
-.PHONY : POO2
-
-# clean rule for target.
-CMakeFiles/POO2.dir/clean:
-	$(MAKE) -f CMakeFiles\POO2.dir\build.make CMakeFiles/POO2.dir/clean
-.PHONY : CMakeFiles/POO2.dir/clean
+.PHONY : Ludo_Master
 
 # clean rule for target.
-clean: CMakeFiles/POO2.dir/clean
+CMakeFiles/Ludo_Master.dir/clean:
+	$(MAKE) -f CMakeFiles\Ludo_Master.dir\build.make CMakeFiles/Ludo_Master.dir/clean
+.PHONY : CMakeFiles/Ludo_Master.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Ludo_Master.dir/clean
 
 .PHONY : clean
 
