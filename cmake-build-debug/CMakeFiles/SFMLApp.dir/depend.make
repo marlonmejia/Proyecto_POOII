@@ -361,6 +361,7 @@ CMakeFiles/SFMLApp.dir/Tablero.cpp.obj: ../Tablero.h
 CMakeFiles/SFMLApp.dir/main.cpp.obj: ../Dado.h
 CMakeFiles/SFMLApp.dir/main.cpp.obj: ../Fichas.h
 CMakeFiles/SFMLApp.dir/main.cpp.obj: ../Game.h
+CMakeFiles/SFMLApp.dir/main.cpp.obj: ../Menu.h
 CMakeFiles/SFMLApp.dir/main.cpp.obj: ../Player.h
 CMakeFiles/SFMLApp.dir/main.cpp.obj: ../Tablero.h
 CMakeFiles/SFMLApp.dir/main.cpp.obj: ../main.cpp
